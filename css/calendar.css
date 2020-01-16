@@ -1,0 +1,45 @@
+body{
+    font-size: 24pt;
+}
+.calendar{
+    width: 40%;
+    margin: 10% auto;
+    text-align: center;
+    border: 5px solid saddlebrown;
+    border-radius: 5%;
+}
+
+.month-indicator{
+    background-color: burlywood;
+    display: grid;
+    padding: 3% 0;
+
+}
+.day-of-week, .date-grid{
+    /* font-size: 2rem; */
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 3%;
+}
+
+/* Positioning the first day on a Saturday */
+.date-grid button:first-child{
+    grid-column: 7;
+}
+
+button{
+    border-width: 0;
+    padding: 5%;
+    background-color: burlywood;
+    font-size: 0.2em;
+}
+
+@media(min-width: 700px){
+    button{
+        border-width: 0;
+        padding: 10%;
+        background-color: burlywood;
+        font-size: 0.7em;
+    }
+}
